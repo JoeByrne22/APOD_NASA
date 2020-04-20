@@ -45,3 +45,8 @@
   margin: 1rem;
   border: red 1px solid;
 }
+
+.indexContainer {
+  display: flex;
+  flex-wrap: wrap;
+}

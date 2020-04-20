@@ -14,6 +14,18 @@ class PosterBox extends Component {
         {
           "title": "two",
           "date" : 2
+        },
+        {
+          "title": "three",
+          "date" : 3
+        },
+        {
+          "title": "four",
+          "date" : 4
+        },
+        {
+          "title": "five",
+          "date" : 5
         }
       ]    
     }
@@ -21,10 +33,12 @@ class PosterBox extends Component {
   render()
   {
     return(
-      <div>
+      <div class="indexContainer">
         {
           this.state.data.map((newData)=> 
+          <div className="container">
               <h2>{newData.title}</h2>
+          </div>
             )
         }
       </div>
