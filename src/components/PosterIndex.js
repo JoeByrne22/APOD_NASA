@@ -12,8 +12,8 @@ class PosterIndex extends React.Component {
 
 
   getPosters() {
-    // axios.get('/api/places')
-    //   .then(res => this.setState({ places: res.data, filteredPlaces: res.data }));
+    // axios.get('./data/data.json')
+    //   .then(res => this.setState({ photo: res.data}));
     console.log('testting the request')
   }
 
@@ -38,7 +38,6 @@ class PosterIndex extends React.Component {
     return (
       <section className="section">
         <PosterBox />
-        
       </section>
     );
   }
