@@ -39,8 +39,11 @@ class PosterBox extends Component {
         {
           this.state.data.map((newData, i)=> 
           <div className="container"  key={i}>
-              <h2>Title: {newData.title}</h2>
-              <h2>Date: {newData.date}</h2>
+              <a href={newData.title}>
+                <h2>Title: {newData.title}</h2>
+                <h2>Date: {newData.date}</h2>
+              </a>
+
           </div>
           )
         }
