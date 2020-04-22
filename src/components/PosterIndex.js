@@ -1,45 +1,23 @@
-import React from 'react';
-// import axios from 'axios';
+import React, {Component} from 'react';
 import PosterBox from './PosterBox';
+// import { render } from '@testing-library/react';
+// import { Link } from 'react-router-dom';
 
-
-class PosterIndex extends React.Component {
-  constructor(props) {
-    super(props);
+class PosterIndex extends Component {
+  constructor()
+  {
+    super();
     this.state = {
-    };
+      data: []    
+    }
   }
-
-
-  getPosters() {
-    // axios.get('./data/data.json')
-    //   .then(res => this.setState({ photo: res.data}));
-    console.log('testting the request')
-  }
-
-  componentDidMount() {
-  }
-
-  // handleSearch(event) {
-  //   event.preventDefault();
-  //   this.setState({ query: event.target.value });
-  //   console.log('search');
-  //   const query  = this.state.query;
-  //   let filteredPlaces = this.state.filteredPlaces;
-  //   const places =this.state.places;
-  //   filteredPlaces = places.filter(places =>
-  //     places.name.toLowerCase().includes(query.toLowerCase())
-  //   );
-  //   this.setState({ filteredPlaces: filteredPlaces });
-  // }
-
-
-  render() {
-    return (
-      <section className="section">
+  render()
+  {
+    return(
+      <div className="indexContainer">
         <PosterBox />
-      </section>
-    );
+      </div>
+    )
   }
 }
 

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 // import { render } from '@testing-library/react';
+// import { Link } from 'react-router-dom';
 
 class PosterBox extends Component {
   constructor()
@@ -33,13 +34,15 @@ class PosterBox extends Component {
   render()
   {
     return(
-      <div class="indexContainer">
+      <div className="indexContainer">
+        
         {
-          this.state.data.map((newData)=> 
-          <div className="container">
-              <h2>{newData.title}</h2>
+          this.state.data.map((newData, i)=> 
+          <div className="container"  key={i}>
+              <h2>Title: {newData.title}</h2>
+              <h2>Date: {newData.date}</h2>
           </div>
-            )
+          )
         }
       </div>
     )
