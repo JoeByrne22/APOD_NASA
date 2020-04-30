@@ -16,15 +16,15 @@ export default function CustomLinkExample() {
   return (
     <Router>
       <div>
-        <OldSchoolMenuLink
+        <MenuLink
           activeOnlyWhenExact={true}
           to="/"
           label="Home"
         />
-        <OldSchoolMenuLink 
+        <MenuLink 
           to="/about" 
           label="About" />
-        <OldSchoolMenuLink 
+        <MenuLink 
           to="/index" 
           label="index" />
         <hr />
@@ -35,13 +35,14 @@ export default function CustomLinkExample() {
           <Route path="/about">
             <About />
           </Route>
-        </Switch>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
           <Route path="/index">
             <Index />
+          </Route>
+        </Switch>
+
+        <Switch>
+          <Route path="/one">
+            <One />
           </Route>
         </Switch>
       </div>
@@ -49,7 +50,7 @@ export default function CustomLinkExample() {
   );
 }
 
-function OldSchoolMenuLink({ label, to, activeOnlyWhenExact }) {
+function MenuLink({ label, to, activeOnlyWhenExact }) {
   let match = useRouteMatch({
     path: to,
     exact: activeOnlyWhenExact
@@ -85,6 +86,15 @@ function About() {
   return (
     <div>
       <h2>About</h2>
+    </div>
+  );
+}
+
+
+function One() {
+  return (
+    <div>
+      <h2>One</h2>
     </div>
   );
 }
