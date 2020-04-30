@@ -47,6 +47,7 @@
 }
 
 .indexContainer {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
@@ -81,7 +82,7 @@
 }
 
 .img1 {
-  background-image: url(/static/media/2020_April_30.410cfb8a.jpg);  
+  background-image: url(./img/2020_April_30.jpg);  
 }
 
 .img2 {
@@ -115,3 +116,23 @@ margin-left: 3rem;
 width: 30%;
 }
 
+.titlu { 
+  background: url(http://imgsrc.hubblesite.org/hu/db/images/hs-2013-06-a-web.jpg) no-repeat; 
+  background-size: 100% 100%;
+  width: 20em; 
+  height: 15em; 
+}
+.secondary-bg {
+  width: inherit; height: inherit;
+  opacity: 0;
+  background: inherit;
+  background-image: url(http://imgsrc.hubblesite.org/hu/db/images/hs-2010-13-a-web.jpg);
+  transition: opacity 2s linear;
+}
+.titlu:hover .secondary-bg { opacity: 1; }
+
+.home_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

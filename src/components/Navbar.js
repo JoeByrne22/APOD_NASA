@@ -91,8 +91,10 @@ function MenuLink({ label, to, activeOnlyWhenExact }) {
 
 function Home() {
   return (
-    <div>
-      <h2>Home</h2>
+    <div className="home_container">
+      <h1 class='titlu'>
+        <div class='secondary-bg'></div>
+      </h1>
     </div>
   );
 }
@@ -100,7 +102,7 @@ function Home() {
 function Index() {
   return (
     <div>
-      <h1>Index</h1>
+      <h1>APOD</h1>
       <PosterIndex />
     </div>
     
@@ -110,7 +112,7 @@ function Index() {
 function About() {
   return (
     <div>
-      <h2>About</h2>
+      <h4>Acknowledgement: The Astronomy Picture of the Day (APOD) is based upon work supported by NASA under award No. 80NSSC17M0076. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Aeronautics and Space Administration.</h4>
     </div>
   );
 }
