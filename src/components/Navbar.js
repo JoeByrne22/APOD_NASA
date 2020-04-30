@@ -15,20 +15,28 @@ import {
 export default function CustomLinkExample() {
   return (
     <Router>
-      <div>
-        <MenuLink
-          activeOnlyWhenExact={true}
-          to="/"
-          label="Home"
-        />
-        <MenuLink 
-          to="/about" 
-          label="About" />
-        <MenuLink 
-          to="/index" 
-          label="index" />
+      <div className="wrapper">
+          <div className="navBar">
+            <span>
+              <MenuLink
+              activeOnlyWhenExact={true}
+              to="/"
+              label="Home" />
+            </span>
+            <span>
+              <MenuLink 
+              to="/about" 
+              label="About" />
+            </span>
+            <span>
+              <MenuLink 
+              to="/index" 
+              label="index" />
+            </span>
+          </div>
         <hr />
-        <Switch>
+        
+          <Switch>
           <Route exact path="/">
             <Home />
           </Route>
@@ -39,10 +47,27 @@ export default function CustomLinkExample() {
             <Index />
           </Route>
         </Switch>
+      
+        
 
         <Switch>
           <Route path="/one">
             <One />
+          </Route>
+          <Route path="/two">
+            <Two />
+          </Route>
+          <Route path="/three">
+            <Three />
+          </Route>
+          <Route path="/four">
+            <Four />
+          </Route>
+          <Route path="/five">
+            <Five />
+          </Route>
+          <Route path="/six">
+            <Six />
           </Route>
         </Switch>
       </div>
@@ -93,8 +118,105 @@ function About() {
 
 function One() {
   return (
-    <div>
-      <h2>One</h2>
+    <div className="show_container">
+          <img className="img img1" alt="universe"/>
+      <div className="text_container">
+        <div className="text_container_headers">
+          <h2>Andromeda Island Universe</h2>
+          <h2>30th April 2020</h2>
+          <h2>taken by Yuzhe Xiao</h2>
+        </div>
+
+      </div>
+
+    </div>
+  );
+}
+
+function Two() {
+  return (
+    <div className="show_container">
+          <img className="img img2" alt="universe"/>
+      <div className="text_container">
+        <div className="text_container_headers">
+          <h2>The Ion Tail of New Comet SWAN</h2>
+          <h2>29th April 2020</h2>
+          <h2>taken by Gerald Rhemann</h2>
+        </div>
+
+      </div>
+
+    </div>
+  );
+}
+
+function Three() {
+  return (
+    <div className="show_container">
+          <img className="img img3" alt="universe"/>
+      <div className="text_container">
+        <div className="text_container_headers">
+          <h2>The Kepler-90 Planetary System</h2>
+          <h2>28th April 2020</h2>
+          <h2>taken by Wendy Stenzel</h2>
+        </div>
+
+      </div>
+
+    </div>
+  );
+}
+
+
+function Four() {
+  return (
+    <div className="show_container">
+          <img className="img img4" alt="universe"/>
+      <div className="text_container">
+        <div className="text_container_headers">
+          <h2>Fresh Tiger Stripes on Saturn's Enceladus</h2>
+          <h2>27th April 2020</h2>
+          <h2>taken by NASA</h2>
+        </div>
+
+      </div>
+
+    </div>
+  );
+}
+
+
+function Five() {
+  return (
+    <div className="show_container">
+          <img className="img img5" alt="universe"/>
+      <div className="text_container">
+        <div className="text_container_headers">
+          <h2>Edwin Hubble Discovers the Universe</h2>
+          <h2>26th April 2020</h2>
+          <h2>Carnegie Institution for Science</h2>
+        </div>
+
+      </div>
+
+    </div>
+  );
+}
+
+
+function Six() {
+  return (
+    <div className="show_container">
+          <img className="img img6" alt="universe"/>
+      <div className="text_container">
+        <div className="text_container_headers">
+          <h2>Hubble's Cosmic Reef</h2>
+          <h2>25th April 2020</h2>
+          <h2>taken by NASA</h2>
+        </div>
+
+      </div>
+
     </div>
   );
 }

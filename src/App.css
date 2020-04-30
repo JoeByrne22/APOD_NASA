@@ -50,3 +50,68 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+
+.wrapper {
+  width: 100%;
+}
+
+.navBar {
+  display: flex;
+    padding: 10px;
+}
+
+.navBar span{
+  padding: 6px;
+}
+.show.container {
+  height: 100vh;
+}
+
+.img {
+  position: absolute;
+  height: 119%;
+  width: 80%;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 58px;
+  margin: 0 10%;
+  z-index: -1;
+}
+
+.img1 {
+  background-image: url(/static/media/2020_April_30.410cfb8a.jpg);  
+}
+
+.img2 {
+  background-image: url(./img/2020_April_29.jpg);  
+}
+
+.img3 {
+  background-image: url(./img/2020_April_28.jpg);  
+}
+
+.img4 {
+  background-image: url(./img/2020_April_27.jpg);  
+}
+
+.img5 {
+  background-image: url(./img/2020_April_26.jpg);  
+}
+
+.img6 {
+  background-image: url(./img/2020_April_25.jpg);  
+}
+
+
+.text_container_headers {
+  padding: 1rem;
+}
+
+.text_container {
+  background-color: red;
+margin-left: 3rem;
+width: 30%;
+}
+

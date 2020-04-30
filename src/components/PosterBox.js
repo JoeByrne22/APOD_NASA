@@ -9,24 +9,40 @@ class PosterBox extends Component {
     this.state = {
       data: [
         {
-          "title": "one",
-          "date" : 1
+          "id": "one",
+          "title": "Andromeda Island Universe",
+          "date" : "30th April 2020",
+          "credit": "Yuzhe Xiao"
         },
         {
-          "title": "two",
-          "date" : 2
+          "id": "two",
+          "title": "The Ion Tail of New Comet SWAN",
+          "date" : "29th April 2020",
+          "credit": "Gerald Rhemann"
         },
         {
-          "title": "three",
-          "date" : 3
+          "id": "three",
+          "title": "The Kepler-90 Planetary System",
+          "date" : "28th April 2020",
+          "credit": "Wendy Stenzel"
         },
         {
-          "title": "four",
-          "date" : 4
+          "id": "four",
+          "title": "Fresh Tiger Stripes on Saturn's Enceladus",
+          "date" : "27th April 2020",
+          "credit": "NASA"
         },
         {
-          "title": "five",
-          "date" : 5
+          "id": "five",
+          "title": "Edwin Hubble Discovers the Universe",
+          "date" : "26th April 2020",
+          "credit": "Carnegie Institution for Science"
+        },
+        {
+          "id": "six",
+          "title": "Hubble's Cosmic Reef",
+          "date" : "25th April 2020",
+          "credit": "NASA"
         }
       ]    
     }
@@ -39,9 +55,10 @@ class PosterBox extends Component {
         {
           this.state.data.map((newData, i)=> 
           <div className="container"  key={i}>
-              <a href={newData.title}>
+              <a href={newData.id}>
                 <h2>Title: {newData.title}</h2>
                 <h2>Date: {newData.date}</h2>
+                <h3>Credit to: {newData.credit}</h3>
               </a>
 
           </div>
