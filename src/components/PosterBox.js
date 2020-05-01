@@ -12,7 +12,8 @@ class PosterBox extends Component {
           "id": "one",
           "title": "Andromeda Island Universe",
           "date" : "30th April 2020",
-          "credit": "Yuzhe Xiao"
+          "credit": "Yuzhe Xiao",
+          "img": "img1"
         },
         {
           "id": "two",
@@ -43,6 +44,12 @@ class PosterBox extends Component {
           "title": "Hubble's Cosmic Reef",
           "date" : "25th April 2020",
           "credit": "NASA"
+        },
+        {
+          "id": "six",
+          "title": "Hubble's Cosmic Reef",
+          "date" : "25th April 2020",
+          "credit": "NASA"
         }
       ]    
     }
@@ -55,10 +62,11 @@ class PosterBox extends Component {
         {
           this.state.data.map((newData, i)=> 
           <div className="container"  key={i}>
+
               <a href={newData.id}>
-                <h2>Title: {newData.title}</h2>
-                <h2>Date: {newData.date}</h2>
-                <h3>Credit to: {newData.credit}</h3>
+                <h2>{newData.title}</h2>
+                <h2>{newData.date}</h2>
+                <h3>{newData.credit}</h3>
               </a>
 
           </div>

@@ -1,7 +1,13 @@
+
+
 .App {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .App-logo {
@@ -38,6 +44,36 @@
     transform: rotate(360deg);
   }
 }
+hr {
+  margin: 0;
+}
+
+.navBar {
+  padding: 1rem 1rem 0 1rem;
+  display: flex;
+}
+
+.navBar span{
+  padding: 0.6rem 0.6rem 0 ;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+}
+
+.navBar span div a {
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.navBar span .active{
+  background-color: lightgrey;
+  height: 3rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
 
 .container {
   height: 20rem;
@@ -57,14 +93,7 @@
   width: 100%;
 }
 
-.navBar {
-  display: flex;
-    padding: 10px;
-}
 
-.navBar span{
-  padding: 6px;
-}
 .show.container {
   height: 100vh;
 }
@@ -135,4 +164,8 @@ width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.about_container {
+  margin: 0 10%;
 }

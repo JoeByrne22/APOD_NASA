@@ -83,7 +83,7 @@ function MenuLink({ label, to, activeOnlyWhenExact }) {
 
   return (
     <div className={match ? "active" : ""}>
-      {match && "> "}
+      
       <Link to={to}>{label}</Link>
     </div>
   );
@@ -111,8 +111,9 @@ function Index() {
 
 function About() {
   return (
-    <div>
+    <div className="about_container">
       <h4>Acknowledgement: The Astronomy Picture of the Day (APOD) is based upon work supported by NASA under award No. 80NSSC17M0076. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Aeronautics and Space Administration.</h4>
+      <p>made with love</p>
     </div>
   );
 }
