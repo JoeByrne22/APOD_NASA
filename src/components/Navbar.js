@@ -110,9 +110,12 @@ function MenuLink({ label, to, activeOnlyWhenExact }) {
 function Home() {
   return (
     <div className="home_container">
-      <h1 class='titlu'>
-        <div class='secondary-bg'></div>
-      </h1>
+        <section className="showcase">
+        <div className="video-container">
+            <video src="https://traversymedia.com/downloads/video.mov" autoPlay muted loop></video>
+        </div>
+    </section>
+
     </div>
   );
 }

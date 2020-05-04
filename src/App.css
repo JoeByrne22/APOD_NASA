@@ -1,3 +1,59 @@
+:root {
+  --primary-color: rgba(172, 86, 223, 0.801);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.showcase {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  color: white;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--primary-color) url(https://traversymedia.com/downloads/cover.jpg) no-repeat center/cover;
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-container:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+
 
 
 .App {
@@ -8,26 +64,17 @@
 
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background: linear-gradient(270deg, #44cbd6, #19d2a3, #7e7dcb);
-background-size: 600% 600%;
+  background: linear-gradient(2deg, #44cbd6, #19d2a3, #7e7dcb);
+  background-size: 600% 600%;
+  
+  animation: AnimationName 7s ease infinite;
+  
+  @keyframes AnimationName {
+      0%{background-position:0% 97%}
+      50%{background-position:100% 4%}
+      100%{background-position:0% 97%}
+  }
 
-animation: AnimationName 2s ease infinite;
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 97%}
-    50%{background-position:100% 4%}
-    100%{background-position:0% 97%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 97%}
-    50%{background-position:100% 4%}
-    100%{background-position:0% 97%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 97%}
-    50%{background-position:100% 4%}
-    100%{background-position:0% 97%}
-}
 }
 
 .App-logo {
@@ -206,11 +253,6 @@ width: 30%;
 }
 .titlu:hover .secondary-bg { opacity: 1; }
 
-.home_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .about_container {
   margin: 0 10%;
