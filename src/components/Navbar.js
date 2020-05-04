@@ -69,6 +69,24 @@ export default function CustomLinkExample() {
           <Route path="/six">
             <Six />
           </Route>
+          <Route path="/seven">
+            <Seven />
+          </Route>
+          <Route path="/eight">
+            <Eight />
+          </Route>
+          <Route path="/nine">
+            <Nine />
+          </Route>
+          <Route path="/ten">
+            <Ten />
+          </Route>
+          <Route path="/eleven">
+            <Eleven />
+          </Route>
+          <Route path="/twelve">
+            <Twelve />
+          </Route>
         </Switch>
       </div>
     </Router>
@@ -102,7 +120,6 @@ function Home() {
 function Index() {
   return (
     <div>
-      <h1>APOD</h1>
       <PosterIndex />
     </div>
     
@@ -112,6 +129,8 @@ function Index() {
 function About() {
   return (
     <div className="about_container">
+      
+      <h4>A small collection of the recent APOS (Astronomy Picture of the Day).</h4>
       <h4>Acknowledgement: The Astronomy Picture of the Day (APOD) is based upon work supported by NASA under award No. 80NSSC17M0076. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Aeronautics and Space Administration.</h4>
       <p>made with love</p>
     </div>
@@ -223,3 +242,109 @@ function Six() {
     </div>
   );
 }
+
+function Seven() {
+  return (
+    <div className="show_container">
+          <img className="img img7" alt="universe"/>
+      <div className="text_container">
+        <div className="text_container_headers">
+          <h2>Lyrid Meteor Streak</h2>
+          <h2>23th April 2020</h2>
+          <h2>taken by Zolt Levay</h2>
+        </div>
+
+      </div>
+
+    </div>
+  );
+}
+
+function Eight() {
+  return (
+    <div className="show_container">
+          <img className="img img8" alt="universe"/>
+      <div className="text_container">
+        <div className="text_container_headers">
+          <h2>Planet Earth at Twilight</h2>
+          <h2>22th April 2020</h2>
+          <h2>taken by ISS Expedition 2 Crew</h2>
+        </div>
+
+      </div>
+
+    </div>
+  );
+}
+
+function Nine() {
+  return (
+    <div className="show_container">
+          <img className="img img9" alt="universe"/>
+      <div className="text_container">
+        <div className="text_container_headers">
+          <h2>Eye on the Milky Way</h2>
+          <h2>21th April 2020</h2>
+          <h2>taken by Miguel Claro</h2>
+        </div>
+
+      </div>
+
+    </div>
+  );
+}
+
+function Ten() {
+  return (
+    <div className="show_container">
+          <img className="img img10" alt="universe"/>
+      <div className="text_container">
+        <div className="text_container_headers">
+          <h2>IC 2944: The Running Chicken Nebula</h2>
+          <h2>20th April 2020</h2>
+          <h2>taken by Juan Filas</h2>
+        </div>
+
+      </div>
+
+    </div>
+  );
+}
+
+function Eleven() {
+  return (
+    <div className="show_container">
+          <img className="img img11" alt="universe"/>
+      <div className="text_container">
+        <div className="text_container_headers">
+          <h2>The Windmill and the Star Trails</h2>
+          <h2>17th April 2020</h2>
+          <h2>taken by Antonio Gonzalez</h2>
+        </div>
+
+      </div>
+
+    </div>
+  );
+}
+
+function Twelve() {
+  return (
+    <div className="show_container">
+          <img className="img img12" alt="universe"/>
+      <div className="text_container">
+        <div className="text_container_headers">
+          <h2>Comet ATLAS Breaks Up</h2>
+          <h2>16th April 2020</h2>
+          <h2>taken by Milen Minev, Velimir Popov and Emil Ivanov</h2>
+        </div>
+
+      </div>
+
+    </div>
+  );
+}
+
+
+
+

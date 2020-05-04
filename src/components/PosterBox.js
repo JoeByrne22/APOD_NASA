@@ -12,8 +12,7 @@ class PosterBox extends Component {
           "id": "one",
           "title": "Andromeda Island Universe",
           "date" : "30th April 2020",
-          "credit": "Yuzhe Xiao",
-          "img": "img1"
+          "credit": "Yuzhe Xiao"
         },
         {
           "id": "two",
@@ -46,10 +45,40 @@ class PosterBox extends Component {
           "credit": "NASA"
         },
         {
-          "id": "six",
-          "title": "Hubble's Cosmic Reef",
-          "date" : "25th April 2020",
-          "credit": "NASA"
+          "id": "seven",
+          "title": "Lyrid Meteor Streak",
+          "date" : "23th April 2020",
+          "credit": "Zolt Levay"
+        },
+        {
+          "id": "eight",
+          "title": "Planet Earth at Twilight",
+          "date" : "22th April 2020",
+          "credit": "ISS Expedition 2 Crew"
+        },
+        {
+          "id": "nine",
+          "title": "Eye on the Milky Way",
+          "date" : "21th April 2020",
+          "credit": "Miguel Claro "
+        },
+        {
+          "id": "ten",
+          "title": "IC 2944: The Running Chicken Nebula",
+          "date" : "20th April 2020",
+          "credit": "Juan Filas"
+        },
+        {
+          "id": "eleven",
+          "title": "The Windmill and the Star Trails",
+          "date" : "17th April 2020",
+          "credit": "Antonio Gonzalez"
+        },
+        {
+          "id": "twelve",
+          "title": "Comet ATLAS Breaks Up",
+          "date" : "16th April 2020",
+          "credit": "Milen Minev, Velimir Popov and Emil Ivanov"
         }
       ]    
     }

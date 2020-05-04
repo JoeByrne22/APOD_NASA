@@ -8,6 +8,26 @@
 
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: linear-gradient(270deg, #44cbd6, #19d2a3, #7e7dcb);
+background-size: 600% 600%;
+
+animation: AnimationName 2s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
 }
 
 .App-logo {
@@ -105,7 +125,7 @@ hr {
   left: 0;
   background-size: cover;
   background-repeat: no-repeat;
-  top: 58px;
+  top: 74px;
   margin: 0 10%;
   z-index: -1;
 }
@@ -133,6 +153,32 @@ hr {
 .img6 {
   background-image: url(./img/2020_April_25.jpg);  
 }
+
+.img7 {
+  background-image: url(./img/2020_April_23.jpg);  
+}
+
+.img8 {
+  background-image: url(./img/2020_April_22.jpg);  
+}
+
+.img9 {
+  background-image: url(./img/2020_April_21.jpg);  
+}
+
+.img10 {
+  background-image: url(./img/2020_April_20.jpg);  
+}
+
+.img11 {
+  background-image: url(./img/2020_April_17.jpg);  
+}
+
+.img12 {
+  background-image: url(./img/2020_April_16.jpg);  
+}
+
+
 
 
 .text_container_headers {
