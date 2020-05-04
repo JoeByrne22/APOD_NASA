@@ -90,7 +90,7 @@ class PosterBox extends Component {
         
         {
           this.state.data.map((newData, i)=> 
-          <div className="container"  key={i}>
+          <div className="container fade-in1"  key={i}>
 
               <a href={newData.id}>
                 <h2>{newData.title}</h2>

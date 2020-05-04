@@ -17,18 +17,18 @@ export default function CustomLinkExample() {
     <Router>
       <div className="wrapper">
           <div className="navBar">
-            <span>
+            <span className="fade-in1">
               <MenuLink
               activeOnlyWhenExact={true}
               to="/"
               label="Home" />
             </span>
-            <span>
+            <span className="fade-in2">
               <MenuLink 
               to="/about" 
               label="About" />
             </span>
-            <span>
+            <span className="fade-in3">
               <MenuLink 
               to="/index" 
               label="index" />
