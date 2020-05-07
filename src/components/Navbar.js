@@ -34,7 +34,7 @@ export default function CustomLinkExample() {
               label="index" />
             </span>
           </div>
-        <hr />
+       
         
           <Switch>
           <Route exact path="/">
@@ -101,7 +101,6 @@ function MenuLink({ label, to, activeOnlyWhenExact }) {
 
   return (
     <div className={match ? "active" : ""}>
-      
       <Link to={to}>{label}</Link>
     </div>
   );
@@ -111,9 +110,7 @@ function Home() {
   return (
     <div className="home_container">
         <section className="showcase">
-        <div className="video-container">
-            <video src="https://traversymedia.com/downloads/video.mov" autoPlay muted loop></video>
-        </div>
+
     </section>
 
     </div>
